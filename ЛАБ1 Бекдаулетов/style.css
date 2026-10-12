@@ -1,0 +1,139 @@
+:root {
+  --bg-color: #f4f6f9;
+  --text-color: #222222;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+  --accent-color: #007bff;
+  --accent-hover: #0056b3;
+}
+
+body.dark-theme {
+  --bg-color: #1e1e2e;
+  --text-color: #f1f1f1;
+  --card-bg: #2a2a3c;
+  --border-color: #3f3f5a;
+  --accent-color: #3b82f6;
+  --accent-hover: #2563eb;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.link-github {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-github:hover {
+  text-decoration: underline;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.primary-btn {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+}
+
+.primary-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.interactive-section {
+  margin-top: 40px;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
